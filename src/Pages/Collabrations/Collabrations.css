@@ -1,0 +1,89 @@
+.collaborations-container {
+    background: linear-gradient(135deg, #1e1e30, #2c2c52, #5f5fa1);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .collaborations-header {
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .collaborations-header h1 {
+    font-size: 3rem;
+    color: #ffcc00;
+    margin-bottom: 20px;
+  }
+  
+  .collaborations-header p {
+    font-size: 1.3rem;
+    color: #d1d5db;
+    margin-bottom: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .collaborations-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+  }
+  
+  .collaboration-card {
+    background: linear-gradient(45deg, #4d4df7, #3f3fcf);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .collaboration-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .collaboration-card h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  
+  .collaboration-card p {
+    font-size: 1.1rem;
+    color: #ececf6;
+    margin-bottom: 25px;
+  }
+  
+  .collaboration-card a {
+    font-size: 1.2rem;
+    color: #ffcc00;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+  }
+  
+  .collaboration-card a:hover {
+    color: #ff9900;
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .collaborations-header h1 {
+      font-size: 2.5rem;
+    }
+  
+    .collaborations-header p {
+      font-size: 1rem;
+    }
+  
+    .collaboration-card {
+      padding: 20px;
+    }
+  }
+  

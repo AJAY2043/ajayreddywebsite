@@ -1,0 +1,81 @@
+/* Main contact container */
+.contact {
+  padding: 40px;
+  background: linear-gradient(120deg, #f0abfc 0%, #4fd4d8 100%);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+
+form {
+  max-width: 600px;
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.form-group .icon {
+  margin-right: 8px;
+  color: #007bff;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  padding-left: 40px; /* Space for the icons */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-group input {
+  height: 40px;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+/* Submit button */
+.submit-btn {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(135deg, #0056b3, #003d80);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact {
+    padding: 20px;
+  }
+
+  .contact h2 {
+    font-size: 1.5rem;
+  }
+}

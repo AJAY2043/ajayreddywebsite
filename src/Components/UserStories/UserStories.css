@@ -1,0 +1,82 @@
+/* Container styling */
+.user-stories {
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #ffcccc, #ff99cc, #ff66b2);
+  color: #333;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+.user-stories h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #fff;
+  letter-spacing: 1.5px;
+}
+
+/* Story cards container */
+.stories-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Individual story card */
+.story-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.story-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* FontAwesome Icons */
+.story-icon {
+  font-size: 3rem;
+  color: #ff0066;
+  margin-bottom: 15px;
+}
+
+/* User name */
+.story-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  color: #ff0066;
+}
+
+/* User feedback */
+.story-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Star icons styling */
+.stars-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.star-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .stories-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

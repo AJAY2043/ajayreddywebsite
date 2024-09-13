@@ -1,0 +1,95 @@
+/* Main FAQ container */
+.faq {
+  padding: 50px;
+  background: linear-gradient(180deg, #fde1ff 0%, #e1ffea 60%);
+  color: #333;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* FAQ heading */
+.faq h2 {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #1a1a1a;
+  letter-spacing: 1.2px;
+}
+
+/* FAQ list container */
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Individual FAQ item */
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+  transition: background-color 0.3s;
+}
+
+/* FAQ question section */
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question:hover {
+  background-color: #f0f0f0;
+}
+
+/* FAQ question text */
+.faq-question h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #333;
+}
+
+/* Down arrow icon */
+.faq-arrow {
+  width: 15px;  /* Reduced size */
+  height: 15px;
+  transition: transform 0.3s ease;
+}
+
+.faq-arrow.open {
+  transform: rotate(180deg);
+}
+
+/* FAQ answer section */
+.faq-answer {
+  padding: 20px;
+  font-size: 1rem;
+  color: #555;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .faq {
+    padding: 30px;
+  }
+
+  .faq h2 {
+    font-size: 2rem;
+  }
+
+  .faq-question h3 {
+    font-size: 1.3rem;
+  }
+
+  .faq-answer {
+    font-size: 0.9rem;
+  }
+}

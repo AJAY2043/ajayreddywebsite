@@ -1,0 +1,51 @@
+.aboutme-container {
+    background-image: url('../../Components/Assets/background-img.jpg');
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: top center; /* Adjust the position to show your face better */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content vertically */
+  }
+  
+  .aboutme-content {
+    color: white;
+    text-align: center;
+    padding: 100px 20px; /* Increased padding to balance the content */
+    background: rgba(0, 0, 0, 0.6); /* Darker overlay for better readability */
+    max-width: 900px;
+    margin: 0 auto; /* Center the content horizontally */
+  }
+  
+  .aboutme-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .aboutme-content p {
+    font-size: 1.3rem; /* Slightly increased font size for readability */
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  .aboutme-content strong {
+    color: #f4d03f; /* Highlighted color for important words */
+  }
+  
+  @media (max-width: 768px) {
+    .aboutme-content {
+      padding: 40px 20px;
+    }
+  
+    .aboutme-content h1 {
+      font-size: 2rem;
+    }
+  
+    .aboutme-content p {
+      font-size: 1.1rem;
+    }
+  }
+  

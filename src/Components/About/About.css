@@ -1,0 +1,59 @@
+/* About Section */
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #f093fb, #f5576c); /* Premium gradient */
+    color: white;
+  }
+  
+  .about-content {
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.1); /* Slight transparency to let gradient show through */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    color: #fff;
+  }
+  
+  .about-content h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .about-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .about-content {
+      padding: 30px;
+    }
+    .about-content h2 {
+      font-size: 2.2rem;
+    }
+    .about-content p {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-content {
+      padding: 20px;
+    }
+    .about-content h2 {
+      font-size: 1.8rem;
+    }
+    .about-content p {
+      font-size: 1rem;
+    }
+  }
+  
