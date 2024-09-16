@@ -10,27 +10,20 @@ const AboutMe = () => {
       <div className="aboutme-content">
         <h1>About Me</h1>
         <p>
-          Hi, I'm <strong>Ajay Krishna Reddy</strong>, a 25-year-old from Narasaraopet, now in Palnadu district, Andhra Pradesh, born on <strong>September 29, 1998</strong>.
-          I graduated from PRIST Deemed University in Chennai, Tamil Nadu.
+          Hi, I'm <strong>Ajay Krishna Reddy</strong>, a 25-year-old from Narasaraopet, now in Palnadu district, Andhra Pradesh, born on <strong>September 29, 1998</strong>. 
+          I am a passionate <strong>Frontend Developer</strong> with a special focus on <strong>React.js</strong>. I'm always excited to work on projects that help me grow and make an impact in the world of web development.
         </p>
         <p>
-          I became a <strong>Frontend Developer</strong>,with a passion in web development and with a special interest in <strong>React.js</strong>, I now Looking to work as a React Developer. 
-          My dream is to become a young entrepreneur and make a difference in society by creating a fraud-free and scam-free India.
+          My dream is to become a young entrepreneur, making a meaningful difference in society by building a fraud-free and scam-free India. To pursue this, I've initiated platforms like <strong>Scamsters</strong> to expose fraudsters, and <strong>Where is My Foreman</strong> to help skilled workers connect with clients and showcase their abilities.
         </p>
         <p>
-          To pursue this, I developed platforms like <strong>Scamsters</strong> to expose frauds, and <strong>Where is My Foreman</strong> to support skilled workers. 
-          My goal is to see my country progress from a developing stage to a developed stage.
+          Currently, I'm seeking opportunities as a <strong>React Developer</strong> or Front-End Developer to further my experience, expand my professional network, and turn my startup ideas into reality.
         </p>
         <p>
-          Despite my good intentions and talent, I haven't received much support or encouragement from family, friends, or relatives. 
-          Currently, I'm seeking a job in <strong>React.js</strong> or Front-End Development, which would help expand my professional circle and allow me to launch my startup ideas.
+          Alongside my job search, I'm also venturing into freelance projects, offering personalized website creation services for professionals such as doctors, lawyers, and business owners. I believe that a personal website is just as essential today as having key documents like Aadhaar or PAN cards.
         </p>
         <p>
-          I'm also venturing into freelance projects, helping individuals create personal websites and portfolios. I believe this could generate revenue to Me ,where it is like just like essential documents such as Aadhaar, PAN, voter ID, and driving licenses.
-          However, I’ve faced too many challenges in getting clients.
-        </p>
-        <p>
-          Life hasn't been easy, and many people have deceived me, but I remain determined to achieve my goals and contribute to society positively.
+          Although life has thrown its challenges my way, and I've faced several setbacks due to a lack of support and even deceit from others, I remain determined to achieve my goals and contribute positively to society.
         </p>
       </div>
       <Footer />

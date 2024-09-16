@@ -8,6 +8,8 @@ import NewsLetter from '../NewsLetter/NewsLetter'
 import FAQ from '../FAQ/FAQ'
 import Contact from '../Contact/Contact'
 import Blogs from '../Blog/Blog'
+import Services from '../Services/Services'
+import Clients from '../Services/Clients.jsx'
 
 const Sections = () => {
   return (
@@ -15,6 +17,8 @@ const Sections = () => {
       <Hero/>
       <About/>
       <Blogs/>
+      <Services/> 
+      <Clients/>
       <Portfolio/>
       <UserStories/>
       <Testimonials/>
