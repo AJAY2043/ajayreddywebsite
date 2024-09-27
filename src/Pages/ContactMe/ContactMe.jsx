@@ -20,7 +20,7 @@ const ContactMe = () => {
         <div className="contact-item" data-aos="fade-up">
           <FontAwesomeIcon icon={faPhoneAlt} className="contact-icon" />
           <h3>Phone</h3>
-          <p><a href="tel:+91888128867">+91 888128867</a></p>
+          <p><a href="tel:+91888128867">+91 8881288867</a></p>
         </div>
 
         <div className="contact-item" data-aos="fade-up" data-aos-delay="100">
