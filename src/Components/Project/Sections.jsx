@@ -5,7 +5,7 @@ import Portfolio from '../Portfolio/Portfolio'
 import UserStories from '../UserStories/UserStories'
 import Testimonials from '../Testmonals/Testimonials'
 import NewsLetter from '../NewsLetter/NewsLetter'
-import FAQ from '../FAQ/FAQ'
+// import FAQ from '../FAQ/FAQ'
 import Contact from '../Contact/Contact'
 import Blogs from '../Blog/Blog'
 import Services from '../Services/Services'
@@ -23,7 +23,7 @@ const Sections = () => {
       <UserStories/>
       <Testimonials/>
       <NewsLetter/>
-      <FAQ/>
+      {/* <FAQ/> */}
       <Contact/>
     </div>
   )

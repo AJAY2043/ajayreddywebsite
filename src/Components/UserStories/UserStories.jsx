@@ -1,60 +1,32 @@
 import React from 'react';
-import './UserStories.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faUserTie, faUserGraduate } from '@fortawesome/free-solid-svg-icons'; // Example icons
-import star_icon from '../Assets/star_icon.png';  // Active star icon
-import star_dull_icon from '../Assets/star_dull_icon.png'; // Inactive star icon
+import './UserStories.css'; // Import the corresponding CSS file for styling
 
 const UserStories = () => {
+  // Example data for user stories
   const stories = [
     {
-      name: "Venkat Mani",
-      feedback: "This platform changed the way I manage my projects. It's intuitive and easy to use!",
-      icon: faUserTie,
-      rating: 4 // Rating out of 5
+      id: 1,
+      title: 'Success Story 1',
+      description: 'This is a short description of the user story.',
+      author: 'Ajay Reddy',
     },
     {
-      name: "Vijaya Reddy",
-      feedback: "An amazing tool that streamlined my workflow. Highly recommend it to anyone!",
-      icon: faUser,
-      rating: 5
+      id: 2,
+      title: 'Success Story 2',
+      description: 'Another inspiring story shared by a user.',
+      author: 'Krishna B.',
     },
-    {
-      name: "Krishna Reddy",
-      feedback: "The best experience I've had with project management tools. Great features and support!",
-      icon: faUserGraduate,
-      rating: 3
-    }
   ];
 
-  const renderStars = (rating) => {
-    const totalStars = 5;
-    let stars = [];
-    for (let i = 0; i < totalStars; i++) {
-      stars.push(
-        <img
-          key={i}
-          src={i < rating ? star_icon : star_dull_icon}
-          alt={i < rating ? 'Filled star' : 'Empty star'}
-          className="star-icon"
-        />
-      );
-    }
-    return stars;
-  };
-
   return (
-    <div className="user-stories">
-      <h2>User Stories</h2>
-      <div className="stories-container">
-        {stories.map((story, index) => (
-          <div key={index} className="story-card">
-            <FontAwesomeIcon icon={story.icon} className="story-icon" />
-            <h3>{story.name}</h3>
-            <p>{story.feedback}</p>
-            <div className="stars-container">
-              {renderStars(story.rating)}
-            </div>
+    <div className="user-stories-container">
+      <h2 className="user-stories-title">User Stories</h2>
+      <div className="stories-grid">
+        {stories.map((story) => (
+          <div key={story.id} className="story-card">
+            <h3 className="story-title">{story.title}</h3>
+            <p className="story-description">{story.description}</p>
+            <p className="story-author">By: {story.author}</p>
           </div>
         ))}
       </div>

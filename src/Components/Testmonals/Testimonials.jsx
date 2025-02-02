@@ -1,60 +1,41 @@
 import React from 'react';
-import './Testimonials.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faUserTie, faUserNinja } from '@fortawesome/free-solid-svg-icons'; // Example icons
-import star_icon from '../Assets/star_icon.png'; // Active star icon
-import star_dull_icon from '../Assets/star_dull_icon.png'; // Inactive star icon
+import './Testimonials.css'; // Importing CSS for styling (Create this file)
 
 const Testimonials = () => {
-  const testimonials = [
+  const testimonialsData = [
     {
-      name: "Gopal Rao",
-      feedback: "An excellent platform with seamless features. It truly helped improve my productivity.",
-      icon: faUserTie,
-      rating: 4 // Rating out of 5
+      id: 1,
+      name: 'John Doe',
+      feedback: 'This product has exceeded my expectations! Highly recommended.',
+      image: 'https://via.placeholder.com/100', // Placeholder image
     },
     {
-      name: "Vamsi Krishna",
-      feedback: "Fantastic experience! The customer support was outstanding and the features are top-notch.",
-      icon: faUser,
-      rating: 5
+      id: 2,
+      name: 'Jane Smith',
+      feedback: 'Amazing service and great quality. Loved the experience!',
+      image: 'https://via.placeholder.com/100',
     },
     {
-      name: "Trivikram",
-      feedback: "I’m very impressed with the ease of use and the powerful features. Highly recommend!",
-      icon: faUserNinja,
-      rating: 3
-    }
+      id: 3,
+      name: 'Sam Wilson',
+      feedback: 'A reliable platform with excellent support. Five stars!',
+      image: 'https://via.placeholder.com/100',
+    },
   ];
-
-  const renderStars = (rating) => {
-    const totalStars = 5;
-    let stars = [];
-    for (let i = 0; i < totalStars; i++) {
-      stars.push(
-        <img
-          key={i}
-          src={i < rating ? star_icon : star_dull_icon}
-          alt={i < rating ? 'Filled star' : 'Empty star'}
-          className="star-icon"
-        />
-      );
-    }
-    return stars;
-  };
 
   return (
     <div className="testimonials">
-      <h2>What Our Users Say</h2>
+      <h2 className="testimonials-title">What Our Customers Say</h2>
       <div className="testimonials-container">
-        {testimonials.map((testimonial, index) => (
-          <div key={index} className="testimonial-card">
-            <FontAwesomeIcon icon={testimonial.icon} className="testimonial-icon" />
-            <h3>{testimonial.name}</h3>
-            <p>{testimonial.feedback}</p>
-            <div className="stars-container">
-              {renderStars(testimonial.rating)}
-            </div>
+        {testimonialsData.map((testimonial) => (
+          <div key={testimonial.id} className="testimonial-card">
+            <img
+              src={testimonial.image}
+              alt={`${testimonial.name}`}
+              className="testimonial-image"
+            />
+            <p className="testimonial-feedback">"{testimonial.feedback}"</p>
+            <h3 className="testimonial-name">- {testimonial.name}</h3>
           </div>
         ))}
       </div>

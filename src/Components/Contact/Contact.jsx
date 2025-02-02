@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faEnvelope, faTag, faComment } from '@fortawesome/free-solid-svg-icons';
 import './Contact.css';
@@ -18,8 +19,13 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log('Form submitted', formData);
+
+    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData, 'YOUR_USER_ID')
+      .then((result) => {
+        alert('Message sent!');
+      }, (error) => {
+        alert('Failed to send message.');
+      });
   };
 
   return (
